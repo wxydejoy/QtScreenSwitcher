@@ -1,0 +1,231 @@
+/* Material Design 3 inspired style for Qt Screen Switcher */
+
+* {
+    font-family: "Segoe UI", "Roboto", "PingFang SC", sans-serif;
+    outline: none;
+}
+
+/* Transparent outer window with opaque inner surface. */
+QWidget#m_centralWidget {
+    background-color: transparent;
+}
+
+QWidget#contentWrapper {
+    background-color: #FFFFFF; /* Solid Opaque White */
+    border-radius: 24px;
+    border: 1px solid #E7E0EC;
+}
+
+/* Title Bar */
+QWidget#titleBar {
+    background-color: #FFFFFF;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    border-bottom: 1px solid #F2F0F4;
+}
+
+QLabel#windowTitle {
+    font-size: 12px;
+    font-weight: 800;
+    color: #44474E;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+QPushButton#titleBtn, QPushButton#closeBtn {
+    border: none;
+    background-color: transparent;
+    border-radius: 15px;
+    font-size: 16px;
+    color: #44474E;
+}
+
+QPushButton#titleBtn:hover {
+    background-color: #F0F2F5;
+}
+
+QPushButton#closeBtn:hover {
+    background-color: #FFEBEE;
+    color: #BA1A1A;
+}
+
+/* Body Area */
+QWidget#body {
+    background-color: #FDFBFF;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
+
+QLabel#header {
+    font-size: 32px;
+    font-weight: 200;
+    color: #1B1B1F;
+    margin-bottom: 2px;
+}
+
+QLabel#headerSubtext {
+    font-size: 13px;
+    color: #6B6572;
+    margin-bottom: 10px;
+}
+
+/* Material Card */
+QFrame#monitorCard {
+    background-color: #FFFFFF;
+    border: 1px solid #E1E2EC;
+    border-radius: 20px;
+}
+
+QFrame#monitorCard:hover {
+    border: 1.5px solid #6750A4;
+    background-color: #FAF8FF;
+}
+
+/* Card Content Labels */
+QLabel#cardTitle {
+    font-size: 17px;
+    font-weight: 600;
+    color: #1B1B1F;
+}
+
+QLabel#cardInfo {
+    font-size: 13px;
+    color: #44474E;
+    font-weight: 400;
+}
+
+QLabel#controlLabel {
+    font-size: 9px;
+    font-weight: 800;
+    color: #6750A4;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+QWidget#controlGroup {
+    background-color: #F8F5FB;
+    border: 1px solid #ECE6F0;
+    border-radius: 16px;
+}
+
+/* Unified Pill Switch Style */
+QPushButton#activeBtn, QPushButton#toggleBtn {
+    border-radius: 16px;
+    padding: 6px 10px;
+    font-weight: 700;
+    font-size: 11px;
+    border: 1.5px solid #E1E2EC;
+    background-color: #FFFFFF;
+    color: #44474E;
+    text-transform: uppercase;
+}
+
+/* Hover effect */
+QPushButton#activeBtn:hover, QPushButton#toggleBtn:hover {
+    background-color: #F2F0F4;
+    border-color: #6750A4;
+}
+
+/* ON State - Primary Material Color */
+QPushButton#activeBtn:checked, QPushButton#toggleBtn:checked {
+    background-color: #6750A4;
+    color: #FFFFFF;
+    border: none;
+}
+
+QPushButton#activeBtn:checked:hover, QPushButton#toggleBtn:checked:hover {
+    background-color: #7E64C0;
+}
+
+/* Disabled State */
+QPushButton#toggleBtn:disabled {
+    background-color: #F2F0F4;
+    color: #C8C5CA;
+    border-color: #F2F0F4;
+}
+
+/* Footer Buttons */
+QPushButton#refreshBtn,
+QPushButton#allOnBtn,
+QPushButton#allOffBtn {
+    min-width: 112px;
+    padding: 0 18px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+QPushButton#refreshBtn {
+    background-color: #FFFFFF;
+    color: #6750A4;
+    border: 1.5px solid #D0C7DA;
+}
+
+QPushButton#refreshBtn:hover {
+    background-color: #F8F3FF;
+    border-color: #6750A4;
+}
+
+QPushButton#refreshBtn:pressed {
+    background-color: #EFE7FB;
+}
+
+QPushButton#allOnBtn {
+    background-color: #6750A4;
+    color: #FFFFFF;
+    border: none;
+}
+
+QPushButton#allOnBtn:hover {
+    background-color: #765DB7;
+}
+
+QPushButton#allOnBtn:pressed {
+    background-color: #5B4496;
+}
+
+QPushButton#allOffBtn {
+    background-color: #BA1A1A;
+    color: #FFFFFF;
+    border: none;
+}
+
+QPushButton#allOffBtn:hover {
+    background-color: #D32F2F;
+}
+
+QPushButton#allOffBtn:pressed {
+    background-color: #A31515;
+}
+
+/* ScrollBar */
+QScrollArea {
+    border: none;
+    background: transparent;
+}
+
+QScrollArea > QWidget > QWidget {
+    background: transparent;
+}
+
+QScrollBar:horizontal {
+    height: 0px;
+    background: transparent;
+}
+
+QScrollBar:vertical {
+    border: none;
+    background: transparent;
+    width: 4px;
+    margin: 4px;
+}
+
+QScrollBar::handle:vertical {
+    background: #C8C5CA;
+    min-height: 40px;
+    border-radius: 2px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #79747E;
+}
