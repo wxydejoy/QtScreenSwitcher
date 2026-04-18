@@ -17,7 +17,7 @@ MonitorCard::MonitorCard(const MonitorInfo& info, ScreenManager* manager, QWidge
     shadow->setBlurRadius(24);
     shadow->setColor(QColor(0, 0, 0, 40));
     shadow->setOffset(0, 4);
-    setGraphicsEffect(shadow);
+   // setGraphicsEffect(shadow);
 
     QHBoxLayout* layout = new QHBoxLayout(this);
     layout->setContentsMargins(24, 20, 24, 20);
@@ -181,13 +181,6 @@ void MainWindow::setupUi()
     bodyLayout->setContentsMargins(24, 20, 24, 20);
     bodyLayout->setSpacing(20);
     
-    QLabel* header = new QLabel("Monitors");
-    header->setObjectName("header");
-    bodyLayout->addWidget(header);
-
-    QLabel* headerSubtext = new QLabel("Minimal monitor control with desktop toggle and backlight toggle");
-    headerSubtext->setObjectName("headerSubtext");
-    bodyLayout->addWidget(headerSubtext);
 
     m_scrollArea = new QScrollArea();
     m_scrollArea->setWidgetResizable(true);
